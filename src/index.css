@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 微軟正黑體, arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* 在:root命名變數，我們也可以在任意的選擇器內命名變數，後面會提到該怎麼寫，以及怎麼使用。 */
+:root {
+  /* 變數命名的規則為：開頭必須是兩個破折號 -- */
+  --mainPink: #cd3151;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
