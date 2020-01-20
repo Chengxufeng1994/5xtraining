@@ -6,13 +6,15 @@ class Navigation extends Component {
         return (
             <header id="header">
                 {/* Navbar */}
-                <nav className="navbar navbar-expand-md navbar-expand-xl navbar-light" id="navbar">
-                    <div className="container-fluid pl-3 pr-3">
+                <nav className="navbar navbar-expand-md navbar-expand-xl navbar-light">
+                    <div className="container-fluid pl-3 pr-3 nav-border">
                         <a className="navbar-brand" href="/#" >
                             <img src="https://5xruby.tw/assets/images/navbar/logo-c473f739.png" alt="網頁設計前後端課程 | 五倍紅寶石" />
                         </a>
                         <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button">
-                            <span className="navbar-toggler-icon"></span>
+                            <div className="icon-bar"></div>
+                            <div className="icon-bar"></div>
+                            <div className="icon-bar"></div>
                         </button>
                         <div className="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                             <ul className="navbar-nav">

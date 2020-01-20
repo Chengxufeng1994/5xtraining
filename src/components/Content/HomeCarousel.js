@@ -4,13 +4,13 @@ import './HomeCarousel.css'
 class HomeCarousel extends Component {
     render() {
         return (
-            <section id="home-carousel">
-                <div id="carouselIndicators" className="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+            <section className="home-carousel">
+                <div id="home-carousel" className="carousel slide" data-ride="carousel">
+                    <ol className="carousel-indicators">
+                        <li data-target="#home-carousel" data-slide-to="0" className="active"></li>
+                        <li data-target="#home-carousel" data-slide-to="1"></li>
+                        <li data-target="#home-carousel" data-slide-to="2"></li>
+                        <li data-target="#home-carousel" data-slide-to="3"></li>
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-interval="5000">
@@ -29,7 +29,7 @@ class HomeCarousel extends Component {
                                     <source srcset="https://5xruby.tw/assets/images/index/banner_imcodingit/small-084bbe8e.jpg" media="(max-width: 400px)" />
                                     <source srcset="https://5xruby.tw/assets/images/index/banner_imcodingit/medium-ac7b6c1c.jpg" media="(max-width: 768px)" />
                                     <source srcset="https://5xruby.tw/assets/images/index/banner_imcodingit/large-522226cd.jpg" media="(min-width: 1920px)" />
-                                    <img className="d-block w-100" src="https://5xruby.tw/assets/images/index/banner_astro-a839be5c.jpg" alt="轉職前後端軟體工程師課程 | ASTRO | 五倍紅寶石" />
+                                    <img className="d-block w-100" src="https://5xruby.tw/assets/images/index/banner_imcodingit-53a9a811.jpg" alt="轉職前後端工程師程式線上課程 | 微痛轉職工程師 | 五倍紅寶石" />
                                 </picture>
                             </a>
                         </div>

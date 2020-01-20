@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Navigation from './components/Header/Navigation';
 import HomeCarousel from './components/Content/HomeCarousel';
-import Feature from './components/Content/Feature'
+import Feature from './components/Content/Feature';
+import Recent from './components/Content/Recent';
+import AvatarCarousel from './components/Content/AvatarCarousel';
+import Showcases from './components/Content/Showcases';
+import Knowaboutus from './components/Content/Knowaboutus';
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Navigation />
       <HomeCarousel />
       <Feature />
-    </div>
+      <Recent />
+      <AvatarCarousel />
+      <Showcases />
+      <Knowaboutus />
+      <Footer />
+    </Fragment>
   );
 }
 

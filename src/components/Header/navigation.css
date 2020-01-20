@@ -1,9 +1,10 @@
-#navbar {
+.navbar {
+    height: 70px;
     padding: 0;
 }
 
-.navbar {
-    height: 70px;
+.nav-border {
+    border-bottom: 0.0625rem solid #eee;
 }
 
 .navbar-brand img {
@@ -26,42 +27,57 @@
 .navbar-toggler {
     outline: none !important;
     background: var(--mainPink);
+    height: 80px;
+    width: 75px;
     padding: 25px 20px 25px 20px;
     margin-right: -16px;
+    border-radius: 0;
 }
 
-.navbar-toggler-icon {
-    font-size: 20px;
-    width: 35px;
+.navbar-toggler .icon-bar {
+    width: 2.1875rem;
+    height: 0.125rem;
+    margin: 0.4375rem 0rem;
+    border-radius: 0.0625rem;
+    background-color: var(--mainWhite);
 }
 
 .nac-item a {
     text-decoration: none;
 }
 
+.navbar-nav {
+    padding: 7.5px;
+}
+
 .nav-link {
+    display: block;
     font-size: 1rem;
-    padding: 0.5rem 0;
-    line-height: 1.25rem;
+    padding: 15px;
 }
 
 .nav-link:hover {
     color: var(--mainPink) !important;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 576px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
     .nav-link {
         font-size: 0.9rem;
-        line-height: 1.25rem;
         padding: 15px 7px;
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 960px) {
     .nav-link {
         font-size: 1rem;
-        line-height: 1.25rem;
-        padding: 0.5rem 0;
+        padding: 15px !important;
     }
 }
 

@@ -1,0 +1,94 @@
+.avatar-carousel .statement {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.avatar-carousel ol {
+    padding: 20px 0;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.avatar-carousel .carousel-indicators {
+    margin-bottom: -50px;
+}
+
+.avatar-carousel .carousel-indicators li {
+    height: 8px;
+    width: 8px;
+    margin-right: 5px;
+    background-color: rgba(85, 85, 85, 0.3);
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.avatar-carousel .carousel-indicators li.active {
+    border: 1px solid white;
+    background-color: var(--mainPink);
+}
+
+.avatar-carousel img {
+    width: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+@media (max-width: 1199px) {
+    .avatar-carousel .carousel-inner {
+        height: 220px;
+    }
+
+    .avatar-carousel .statement {
+        margin-left: 30px;
+    }
+
+    .avatar-carousel img {
+        width: 77.5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .avatar-carousel .carousel-inner {
+        height: 250px;
+    }
+
+    .avatar-carousel .statement {
+        margin-left: 0px;
+    }
+
+    .avatar-carousel img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .avatar-carousel .carousel-inner {
+        height: 280px;
+    }
+
+    .avatar-carousel .statement {
+        margin-left: 10px;
+    }
+
+    .avatar-carousel img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    .avatar-carousel .carousel-inner {
+        height: 280px;
+    }
+
+    .avatar-carousel .statement {
+        margin-left: 10px;
+    }
+
+    .avatar-carousel img {
+        width: 59.4px;
+    }
+}

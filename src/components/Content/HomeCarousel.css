@@ -1,0 +1,13 @@
+.home-carousel .carousel-indicators li {
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home-carousel .carousel-indicators li.active {
+    border: 1px solid white;
+    background-color: var(--mainPink);
+}
