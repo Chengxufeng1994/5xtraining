@@ -13,6 +13,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: #333;
+}
+
+a:hover {
+  color: var(--mainPink);
+}
+
 a,
 a:hover {
   text-decoration: none;

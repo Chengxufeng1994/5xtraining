@@ -1,0 +1,74 @@
+.footer {
+    padding: 3.125rem 0rem;
+    bottom: 0rem;
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+.footer .press-img img {
+    width: 100%;
+    filter: grayscale(100%)
+}
+
+.footer .press-img img:hover {
+    filter: grayscale(0%)
+}
+
+.footer .cakeresume {
+    font-size: 18px;
+}
+
+.footer h5 {
+    font-size: 0.875rem;
+    margin: 0.625rem 1.5625rem 0.625rem 0rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footer .social-icon {
+    font-size: 1.375rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.625rem;
+    margin-right: 0.625rem;
+    color: #666;
+    border: 0.125rem solid #666;
+    border-radius: 50%;
+}
+
+.footer .social-icon:hover {
+    color: var(--mainPink);
+    border-color: var(--mainPink);
+}
+
+.footer .fa-facebook-f {
+    padding: 8px 10px;
+}
+
+.footer .fa-twitter {
+    padding: 8px;
+}
+
+.footer .fa-github {
+    padding: 7px;
+}
+
+.btn-scrollToTop {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.25rem;
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color: var(--mainPink);
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 3.125rem;
+    font-size: 1.875rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #f7f7f7;
+}
+
+.btn-scrollToTop:hover {
+    transform: scale(1.2);
+}

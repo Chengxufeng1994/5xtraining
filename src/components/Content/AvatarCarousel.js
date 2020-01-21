@@ -5,7 +5,7 @@ class AvatarCarousel extends Component {
     render() {
         return (
             <section className="avatar-carousel bg-light pb-5">
-                <h3 class="section-title text-center mb-4 pt-5 pb-4">
+                <h3 className="section-title text-center mb-4 pt-5 pb-4">
                     <span>網頁課程推薦</span>
                 </h3>
                 <div id="avatar-carousel" className="carousel slide" data-ride="carousel">
@@ -21,7 +21,7 @@ class AvatarCarousel extends Component {
                         <div className="container mt-5">
                             <div className="carousel-item active" data-interval="5000">
                                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                                    <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
                                         <img src="https://5xruby.tw/assets/images/testimoney/avatar/victor-3ec52916.jpg" className="d-block" alt="程式課程推薦 | Victor Lam | 五倍紅寶石" />
                                     </div>
                                     <div className="col-8 col-sm-8 col-md-6 col-lg-6">
@@ -36,7 +36,7 @@ class AvatarCarousel extends Component {
                             </div>
                             <div className="carousel-item" data-interval="5000">
                                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                                    <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
                                         <img src="https://5xruby.tw/assets/images/testimoney/avatar/jason-e7e95cad.jpg" className="d-block" alt="程式課程推薦 | Victor Lam | 五倍紅寶石" />
                                     </div>
                                     <div className="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
@@ -50,7 +50,7 @@ class AvatarCarousel extends Component {
                             </div>
                             <div className="carousel-item" data-interval="5000">
                                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                                    <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
                                         <img src="https://5xruby.tw/assets/images/testimoney/avatar/felix-d1d4db69.jpg" className="d-block" alt="程式課程推薦 | Victor Lam | 五倍紅寶石" />
                                     </div>
                                     <div className="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
@@ -64,7 +64,7 @@ class AvatarCarousel extends Component {
                             </div>
                             <div className="carousel-item" data-interval="5000">
                                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                                    <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
                                         <img src="https://5xruby.tw/assets/images/testimoney/avatar/hana-4ae009cb.jpg" className="d-block" alt="程式課程推薦 | Victor Lam | 五倍紅寶石" />
                                     </div>
                                     <div className="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
@@ -78,7 +78,7 @@ class AvatarCarousel extends Component {
                             </div>
                             <div className="carousel-item" data-interval="5000">
                                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                                    <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
                                         <img src="https://5xruby.tw/assets/images/testimoney/avatar/johnsie-7322ca81.jpg" className="d-block" alt="程式課程推薦 | Victor Lam | 五倍紅寶石" />
                                     </div>
                                     <div className="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
@@ -92,7 +92,7 @@ class AvatarCarousel extends Component {
                             </div>
                             <div className="carousel-item" data-interval="5000">
                                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                                    <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
                                         <img src="https://5xruby.tw/assets/images/testimoney/avatar/benlin-54e253f4.jpg" className="d-block" alt="程式課程推薦 | Victor Lam | 五倍紅寶石" />
                                     </div>
                                     <div className="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
