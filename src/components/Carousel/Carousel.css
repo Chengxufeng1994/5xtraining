@@ -1,0 +1,85 @@
+.slideShow,
+.slide-inner,
+.slide-item {
+    position: relative;
+    width: 100%;
+}
+
+.slide-inner {
+    overflow: hidden;
+}
+
+.slide-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item {
+    display: none;
+    transition: transform .6s ease;
+}
+
+.slide-item.enter-active {
+    display: block;
+}
+
+/* animation for slide */
+.leave {
+    transform: translateX(0);
+}
+
+.enter-active.enter-next,
+.enter-active.enter-prev {
+    transform: translateX(0);
+}
+
+.enter-next {
+    transform: translateX(100%);
+}
+
+.enter-prev {
+    transform: translateX(-100%);
+}
+
+.leave.leave-active-next {
+    transform: translateX(-100%);
+    ;
+}
+
+.leave.leave-active-prev {
+    transform: translateX(100%);
+}
+
+/* slide indicators */
+.slide-indicators {
+    padding: 1rem;
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-indicators li {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 3px;
+}
+
+
+.slide-indicators li.active {
+    border: 1px solid var(--mainWhite);
+    background-color: var(--mainPink);
+}

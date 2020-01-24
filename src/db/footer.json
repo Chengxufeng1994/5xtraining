@@ -1,0 +1,44 @@
+{
+    "links": [{
+            "title": "關於五倍紅寶石",
+            "href": "/about"
+        },
+        {
+            "title": "媒體報導",
+            "href": "/press"
+        },
+        {
+            "title": "團隊成員",
+            "href": "/members"
+        },
+        {
+            "title": "聯絡詢價",
+            "href": "/contacts"
+        },
+        {
+            "title": "常見問題",
+            "href": "/faq"
+        },
+        {
+            "title": "工作機會",
+            "href": "/jobs"
+        },
+        {
+            "title": "開源專案",
+            "href": "https://github.com/5xRuby"
+        }, {
+            "title": "隱私權條款",
+            "href": "/privacy-policy"
+        }, {
+            "title": "服務條款",
+            "href": "/terms-of-service"
+        }
+    ],
+    "phone": "02-2331-5247",
+    "openTime": "Mon - Fri / 09:30 - 22:00",
+    "question": "有任何問題？",
+    "email": "hi@5xruby.tw",
+    "address": " 10046 台北市中正區衡陽路 7 號 5 樓",
+    "copyright1": "© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD)",
+    "copyright2": "台北市短期補習班立案 第 7594 號"
+}

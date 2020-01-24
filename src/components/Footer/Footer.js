@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
+import data from '../../db/footer.json'
 
 class Footer extends Component {
 
@@ -11,6 +12,7 @@ class Footer extends Component {
     }
 
     render() {
+        const footerData = data
         return (
             <footer className="footer bg-light mt-5">
                 <div className="container">
@@ -30,24 +32,20 @@ class Footer extends Component {
                             <div className="row">
                                 <div className="col-12 mt-3 mt-md-0">
                                     <div className="footer-nav">
-                                        <h5><a href="/about">關於五倍紅寶石</a></h5>
-                                        <h5><a href="/press">媒體報導</a></h5>
-                                        <h5><a href="/members">團隊成員</a></h5>
-                                        <h5><a href="/contacts">聯絡詢價</a></h5>
-                                        <h5><a href="/faq">常見問題</a></h5>
-                                        <h5><a href="/jobs">工作機會</a></h5>
-                                        <h5><a href="https://github.com/5xRuby" rel="noopener noreferrer" target="_blank">開源專案</a></h5>
-                                        <h5><a href="/privacy-policy">隱私權條款</a></h5>
-                                        <h5><a href="/terms-of-service">服務條款</a></h5>
+                                        {footerData.links.map((item, index) => {
+                                            return (
+                                                <h5 key={index}><a href={item.href}>{item.title}</a></h5>
+                                            )
+                                        })}
                                     </div>
                                 </div>
                                 <div className="col-12 mt-4">
                                     <div className="row">
                                         <div className="col-12 col-md-4 col-xl-3">
                                             <div className="contact-info">
-                                                <strong className="large text-danger">02-2331-5247</strong>
+                                                <strong className="large text-danger">{footerData.phone}</strong>
                                                 <br />
-                                                <small>Mon - Fri / 09:30 - 22:00</small>
+                                                <small>{footerData.openTime}</small>
                                                 <br />
                                                 <a href="https://www.facebook.com/5xruby" target="_blank" rel="noopener noreferrer"><i className="social-icon fab fa-facebook-f"></i></a>
                                                 <a href="https://twitter.com/5xruby" target="_blank" rel="noopener noreferrer"><i className="social-icon fab fa-twitter" ></i></a>
@@ -56,10 +54,10 @@ class Footer extends Component {
                                         </div>
                                         <div className="col-12 col-md-8 col-xl-9 mt-0 mt-md-0">
                                             <div className="mail-address">
-                                                <p>有任何問題？</p>
-                                                <a href="mailto:hi@5xruby.tw">hi@5xruby.tw</a>
+                                                <p>{footerData.question}</p>
+                                                <a href="mailto:hi@5xruby.tw">{footerData.email}</a>
                                                 <br />
-                                                <p>地址： <a target="_blank" href="https://goo.gl/lz5v93" rel="noopener noreferrer">10046 台北市中正區衡陽路 7 號 5 樓</a></p>
+                                                <p>地址： <a target="_blank" href="https://goo.gl/lz5v93" rel="noopener noreferrer">{footerData.address}</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -68,8 +66,8 @@ class Footer extends Component {
                         </div>
                         <div className="col-12 mt-5">
                             <div className="contact-info text-center">
-                                <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD)</p>
-                                <p>台北市短期補習班立案 第 7594 號</p>
+                                <p>{footerData.copyright1}</p>
+                                <p>{footerData.copyright2}</p>
                             </div>
                         </div>
                     </div>
