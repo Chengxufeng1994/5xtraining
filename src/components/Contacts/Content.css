@@ -1,0 +1,77 @@
+.top-banner.red-bg {
+    position: relative;
+    background: var(--mainPink) linear-gradient(135deg, rgba(197, 80, 10, 0.7) 0%, rgba(181, 4, 75, 0.7) 70%);
+}
+
+.top-banner .breadcrumb {
+    background: none;
+    display: inline;
+    padding: 1.25rem 0rem;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.top-banner .breadcrumb li {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.top-banner .breadcrumb li:nth-of-type(2)::before {
+    color: #fff;
+    content: ">";
+}
+
+.top-banner .breadcrumb li a {
+    color: #fff;
+    border-bottom: 0.125rem solid transparent;
+    padding-bottom: 0.125rem;
+}
+
+.top-banner .title {
+    padding-bottom: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.top-banner h1.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.top-banner h1.title::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 80px;
+    height: 3px;
+    left: 50%;
+    margin: 0 0 0 -40px;
+    bottom: 1rem;
+    border-radius: 3px;
+}
+
+.contact-info {
+    color: #555;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+}
+
+.contact-info .mail {
+    color: var(--mainPink)
+}
+
+.contact-form .btn-block {
+    display: block;
+    width: 100%;
+}
+
+.contact-form .btn-red {
+    background: #d90845;
+    padding: 0.9375rem 3.125rem;
+    color: #fff;
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+}

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import data from '../../db/header.json'
-import "./navigation.css"
+import "./Header.css"
 
-class Navigation extends Component {
+class Header extends Component {
     headerList() {
         return (
             data.map((item, index) => {
@@ -36,7 +36,7 @@ class Navigation extends Component {
     }
     render() {
         return (
-            <header id="header">
+            <header className="header">
                 {/* Navbar */}
                 <nav className="navbar navbar-expand-md navbar-expand-xl navbar-light">
                     <div className="container-fluid pl-3 pr-3 nav-border">
@@ -61,4 +61,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default Header;
