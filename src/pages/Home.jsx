@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         return (
             <Fragment>
-                <HomeCarousel />
+                <HomeCarousel carouselData={data.carousel} />
                 <Feature featureData={data.sections[0]} />
                 <Recent recentData={data.sections[1]} />
                 <AvatarCarousel avatarData={data.sections[2]} />
