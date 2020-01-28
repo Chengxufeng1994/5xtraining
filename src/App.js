@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from '../src/components/Header/Header';
 import Footer from '../src/components/Footer/Footer';
 import Home from './pages/Home.jsx'
-import Contacts from './pages/Contacts';
+import Contacts from './pages/Contacts.jsx';
 // import Carousel from './components/Carousel/Carousel'
 
 function App() {

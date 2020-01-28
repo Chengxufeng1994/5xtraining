@@ -2,17 +2,21 @@ import React, { Component, Fragment } from 'react';
 import Modal from './Modal'
 import './Content.css'
 
-class Contacts extends Component {
-    state = {
-        name: "",
-        email: "",
-        phone: "",
-        theme: "",
-        message: "",
-        isFinish: false,
+class Content extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: "",
+            email: "",
+            phone: "",
+            theme: "",
+            message: "",
+            isFinish: false,
+        };
+        this.toggle = this.toggle.bind(this);
     }
 
-    toggle = (event) => {
+    toggle(event) {
         event.preventDefault();
         this.setState((prevState) => ({
             isFinish: !prevState.isFinish
@@ -137,4 +141,4 @@ class Contacts extends Component {
     }
 }
 
-export default Contacts
+export default Content
