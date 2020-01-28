@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
 import data from '../../db/header.json';
 import './Header.css';
@@ -5,28 +6,29 @@ import './Header.css';
 class Header extends Component {
   headerList() {
     return (
-      data.map((item, index) => {
-        switch (index) {
+      data.map((item) => {
+        const { id, to, title } = item;
+        switch (item.id) {
           case 0:
             return (
-              <li key={index} className="nav-item text-center">
-                <a className="nav-link" href={item.to}>
+              <li key={id} className="nav-item text-center">
+                <a className="nav-link" href={to}>
                   <span>
                     <i className="far fa-gem" />
                     {' '}
-                    {item.title}
+                    {title}
                   </span>
                 </a>
               </li>
             );
           case 1:
             return (
-              <li key={index} className="nav-item text-center">
-                <a className="nav-link" href={item.to}>
+              <li key={id} className="nav-item text-center">
+                <a className="nav-link" href={to}>
                   <span>
                     <i className="far fa-compass fa-lg" />
                     {' '}
-                    {item.title}
+                    {title}
                   </span>
                   <span className="tag">報名優惠中</span>
                 </a>
@@ -34,8 +36,8 @@ class Header extends Component {
             );
           default:
             return (
-              <li key={index} className="nav-item text-center">
-                <a className="nav-link" href={item.to}>{item.title}</a>
+              <li key={id} className="nav-item text-center">
+                <a className="nav-link" href={to}>{title}</a>
               </li>
             );
         }

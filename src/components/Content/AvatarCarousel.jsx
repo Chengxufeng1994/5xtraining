@@ -1,25 +1,31 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './AvatarCarousel.css';
 
 class AvatarCarousel extends Component {
   avatarList() {
     const { avatarData } = this.props;
+
     return (
       avatarData.cards.map((item) => {
-        switch (item.id) {
+        const {
+          id, img, alt, content, author, job,
+        } = item;
+
+        switch (id) {
           case 0:
             return (
-              <div key={item.id} className="carousel-item active" data-interval="5000">
+              <div key={id} className="carousel-item active" data-interval="5000">
                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
                   <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
-                    <img src={item.img} className="d-block" alt={item.alt} />
+                    <img src={img} className="d-block" alt={alt} />
                   </div>
                   <div className="col-8 col-sm-8 col-md-6 col-lg-6">
                     <p className="d-block statement">
-                      {item.content}
+                      {content}
                       <br />
-                      <span className="d-block text-red large mt-3">{item.author}</span>
-                      <span className="d-block text-grey">{item.job}</span>
+                      <span className="d-block text-red large mt-3">{author}</span>
+                      <span className="d-block text-grey">{job}</span>
                     </p>
                   </div>
                 </div>
@@ -27,17 +33,17 @@ class AvatarCarousel extends Component {
             );
           default:
             return (
-              <div key={item.id} className="carousel-item" data-interval="5000">
+              <div key={id} className="carousel-item" data-interval="5000">
                 <div className="d-flex flex-nowrap mx-auto justify-content-center">
                   <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
-                    <img src={item.img} className="d-block" alt={item.alt} />
+                    <img src={img} className="d-block" alt={alt} />
                   </div>
                   <div className="col-8 col-sm-8 col-md-6 col-lg-6">
                     <p className="d-block statement">
-                      {item.content}
+                      {content}
                       <br />
-                      <span className="d-block text-red large mt-3">{item.author}</span>
-                      <span className="d-block text-grey">{item.job}</span>
+                      <span className="d-block text-red large mt-3">{author}</span>
+                      <span className="d-block text-grey">{job}</span>
                     </p>
                   </div>
                 </div>

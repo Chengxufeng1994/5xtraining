@@ -1,12 +1,14 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './Recent.css';
 
 class Recent extends Component {
   recentItem() {
     const { recentData } = this.props;
+    const { title, cards } = recentData;
 
-    const recentList = recentData.cards.map((item, index) => (
-      <div key={index} className="col-sm-12 col-md-6 col-lg-4 mb-4 lecture-item">
+    const recentList = cards.map((item) => (
+      <div key={item.id} className="col-sm-12 col-md-6 col-lg-4 mb-4 lecture-item">
         <a href="/#">
           <div className="lecture-wrap">
             <img src={item.img} alt={item.title} />
@@ -25,7 +27,7 @@ class Recent extends Component {
     return (
       <div className="col-12 center-block pb-3">
         <h3 className="section-title text-center my-5 pb-4">
-          {recentData.title}
+          {title}
         </h3>
         <div className="d-flex flex-wrap pb-5 lecture-list">
           {recentList}

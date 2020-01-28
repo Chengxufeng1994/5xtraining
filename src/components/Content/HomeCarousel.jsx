@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './HomeCarousel.css';
 
@@ -5,11 +6,11 @@ class HomeCarousel extends Component {
   carouselList() {
     const { carouselData } = this.props;
     return (
-      carouselData.map((item, index) => {
-        switch (index) {
+      carouselData.map((item) => {
+        switch (item.id) {
           case 0:
             return (
-              <div key={index} className="carousel-item active" data-interval="5000">
+              <div key={item.id} className="carousel-item active" data-interval="5000">
                 <a href="https://astro.5xruby.tw/" target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcSet={item.sm} media="(max-width: 400px)" />
@@ -22,7 +23,7 @@ class HomeCarousel extends Component {
             );
           default:
             return (
-              <div key={index} className="carousel-item" data-interval="5000">
+              <div key={item.id} className="carousel-item" data-interval="5000">
                 <a href="https://astro.5xruby.tw/" target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcSet={item.sm} media="(max-width: 400px)" />

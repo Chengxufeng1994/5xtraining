@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './Feature.css';
 
 class Feature extends Component {
   featureList() {
     const { featureData } = this.props;
+    const { title, cards } = featureData;
 
-    const featureList = featureData.cards.map((item) => (
+    const featureList = cards.map((item) => (
       <div key={item.id} className="col-sm-12 col-md-3">
         <a href="/#">
           <img src={item.img} alt={item.alt} />
@@ -24,7 +26,7 @@ class Feature extends Component {
     return (
       <div className="col-12 center-block pb-3">
         <h3 className="section-title text-center my-5 pb-4">
-          {featureData.title}
+          {title}
         </h3>
         <div className="d-flex feature-list flex-wrap text-center">
           {featureList}

@@ -24,7 +24,9 @@ class Content extends Component {
   }
 
   render() {
-    const { name, email, phone, theme, message } = this.state;
+    const {
+      name, email, phone, theme, message,
+    } = this.state;
     return (
       <>
         <div className="top-banner red-bg pt-3 pb-3 contacts">
