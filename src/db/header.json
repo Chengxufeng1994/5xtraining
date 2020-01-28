@@ -1,36 +1,36 @@
 [{
-        "id": 0,
-        "title": "線上課程",
-        "to": "/imcoding"
-    },
-    {
-        "id": 1,
-        "title": "ASTRO Camp",
-        "to": "/astro"
-    },
-    {
-        "id": 2,
-        "title": "短期課程",
-        "to": "/talks"
-    },
-    {
-        "id": 3,
-        "title": "專案開發",
-        "to": "/dev5xruby"
-    },
-    {
-        "id": 4,
-        "title": "企業代訓",
-        "to": "/training"
-    },
-    {
-        "id": 5,
-        "title": "空間租借",
-        "to": "/space"
-    },
-    {
-        "id": 6,
-        "title": "最新消息",
-        "to": "/posts"
-    }
+    "id": 0,
+    "title": "線上課程",
+    "to": "/imcoding"
+  },
+  {
+    "id": 1,
+    "title": "ASTRO Camp",
+    "to": "/astro"
+  },
+  {
+    "id": 2,
+    "title": "短期課程",
+    "to": "/talks"
+  },
+  {
+    "id": 3,
+    "title": "專案開發",
+    "to": "/dev5xruby"
+  },
+  {
+    "id": 4,
+    "title": "企業代訓",
+    "to": "/training"
+  },
+  {
+    "id": 5,
+    "title": "空間租借",
+    "to": "/space"
+  },
+  {
+    "id": 6,
+    "title": "最新消息",
+    "to": "/posts"
+  }
 ]

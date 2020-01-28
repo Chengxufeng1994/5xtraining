@@ -62,8 +62,8 @@ Modal.propTypes = {
       phone: PropTypes.string.isRequired,
       theme: PropTypes.string.isRequired,
       message: PropTypes.string.isRequired,
-      isFinish: PropTypes.bool.isRequired
-    })
+      isFinish: PropTypes.bool.isRequired,
+    }),
   ),
   toggle: PropTypes.func.isRequired,
 };
