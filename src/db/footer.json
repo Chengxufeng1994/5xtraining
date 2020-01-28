@@ -1,35 +1,46 @@
 {
     "links": [{
+            "id": 0,
             "title": "關於五倍紅寶石",
             "href": "/about"
         },
         {
+            "id": 1,
             "title": "媒體報導",
             "href": "/press"
         },
         {
+            "id": 2,
             "title": "團隊成員",
             "href": "/members"
         },
         {
+            "id": 3,
             "title": "聯絡詢價",
             "href": "/contacts"
         },
         {
+            "id": 4,
             "title": "常見問題",
             "href": "/faq"
         },
         {
+            "id": 5,
             "title": "工作機會",
             "href": "/jobs"
         },
         {
+            "id": 6,
             "title": "開源專案",
             "href": "https://github.com/5xRuby"
-        }, {
+        },
+        {
+            "id": 7,
             "title": "隱私權條款",
             "href": "/privacy-policy"
-        }, {
+        },
+        {
+            "id": 8,
             "title": "服務條款",
             "href": "/terms-of-service"
         }

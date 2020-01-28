@@ -1,5 +1,6 @@
 {
     "carousel": [{
+            "id": 0,
             "sm": "https://5xruby.tw/assets/images/index/banner_astro/small-0a0f4727.jpg",
             "md": "https://5xruby.tw/assets/images/index/banner_astro/medium-68da60f6.jpg",
             "lg": "https://5xruby.tw/assets/images/index/banner_astro/large-a839be5c.jpg",
@@ -7,6 +8,7 @@
             "alt": "轉職前後端軟體工程師課程 | ASTRO | 五倍紅寶石"
         },
         {
+            "id": 1,
             "sm": "https://5xruby.tw/assets/images/index/banner_imcodingit/small-084bbe8e.jpg",
             "md": "https://5xruby.tw/assets/images/index/banner_imcodingit/medium-ac7b6c1c.jpg",
             "lg": "https://5xruby.tw/assets/images/index/banner_imcodingit/large-522226cd.jpg",
@@ -14,6 +16,7 @@
             "alt": "轉職前後端工程師程式線上課程 | 微痛轉職工程師 | 五倍紅寶石"
         },
         {
+            "id": 2,
             "sm": "https://5xruby.tw/assets/images/index/banner_mokumokukai/small-55384ddb.jpg",
             "md": "https://5xruby.tw/assets/images/index/banner_mokumokukai/medium-7e04c28f.jpg",
             "lg": "https://5xruby.tw/assets/images/index/banner_mokumokukai/large-624d5776.jpg",
@@ -21,6 +24,7 @@
             "alt": "工程師社群默默會 | 工程師交流討論 | 五倍紅寶石"
         },
         {
+            "id": 3,
             "sm": "https://5xruby.tw/assets/images/index/banner_5xruby/small-f0f041dc.jpg",
             "md": "https://5xruby.tw/assets/images/index/banner_5xruby/medium-31d58562.jpg",
             "lg": "https://5xruby.tw/assets/images/index/banner_5xruby/large-8a833869.jpg",
@@ -31,24 +35,28 @@
     "sections": [{
             "title": "關於五倍紅寶石 About 5xRuby",
             "cards": [{
+                "id": 0,
                 "img": "https://5xruby.tw/assets/images/index/feature-list/feature-list-img1-0d20ab19.png",
                 "alt": "網頁設計前後端課程教學 | 五倍紅寶石",
                 "title": "網頁設計",
                 "subTitle": "前後端課程教學",
                 "content": "帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！"
             }, {
+                "id": 1,
                 "img": "https://5xruby.tw/assets/images/index/feature-list/feature-list-img2-26e4ca80.png",
                 "title": "頂尖技術",
                 "alt": "頂尖技術網頁製作、專案開發 | 五倍紅寶石",
                 "subTitle": "網頁製作、專案開發",
                 "content": "網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。"
             }, {
+                "id": 2,
                 "img": "https://5xruby.tw/assets/images/index/feature-list/feature-list-img3-d0a4089e.png",
                 "alt": "資訊軟體技術顧問 | 五倍紅寶石",
                 "title": "資訊軟體開發",
                 "subTitle": "技術顧問",
                 "content": "協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！"
             }, {
+                "id": 3,
                 "img": "https://5xruby.tw/assets/images/index/feature-list/feature-list-img4-13321bf0.png",
                 "alt": "前後端工程師社群經營問 | 默默會 | 五倍紅寶石",
                 "title": "前後端工程師",
@@ -59,6 +67,7 @@
         {
             "title": "熱門網頁設計課程推薦",
             "cards": [{
+                "id": 0,
                 "img": "https://5xruby.tw/assets/images/talks/cover/ruby-on-rails-7c597107.jpg",
                 "title": "Ruby on Rails 實戰課程 - 假日班",
                 "content": "後臺開發不是夢！實戰程度百分百的 Ruby & Rails 課程 。具備高度生產力，簡潔、有效率的編寫，即便是初學者也能快速上手的 Ruby 程式語言 ，搭配 Rails 框架，短時間內部署自己的專案。從電商網站到金流平台串接， 5 天課程帶您走過專案流程，熟悉整體架構。",
@@ -66,6 +75,7 @@
                 "status": "已確定開課",
                 "author": "講者： 高見龍 (Eddie Kao)  | 時數： 30 小時"
             }, {
+                "id": 1,
                 "img": "https://5xruby.tw/assets/images/talks/cover/functional-09be0f61.jpg",
                 "title": "工作上用得到的函數式程式設計：從觀念到實務 - 假日班",
                 "content": "隨著多核心電腦成為主流、分散式系統架構也成為顯學，函數式程式設計的重要性也與日俱增。跟物件導向程式設計相比，函數式程式設計著重於用更簡潔的方向表達程式碼真正的意圖。因此當學會用與物件導向程式程計不同的角度來寫程式後，可以讓你在切換不同的程式語言時依然能游刃有餘。這門課將會透過一門好入手的非純函數式語言 Elixir 開始， 教大家最重要的函數式程式設計觀念。 接著介紹如何在 Ruby、 JavaScript(也許還有一點 C#) 上使用函數式程式設計的技巧。 讓你寫出精簡、 好除錯的厲害程式碼！ ",
@@ -73,6 +83,7 @@
                 "status": null,
                 "author": "講者： 蘇泰安 (Taian Su)  | 時數： 9 小時"
             }, {
+                "id": 2,
                 "img": "https://5xruby.tw/assets/images/talks/cover/rwd-99b9e59b.jpg",
                 "title": "網頁設計班 - 假日班",
                 "content": "你還在困擾網頁該怎麼做 RWD 嗎？講師手把手教學，帶你快速上手 RWD，不僅教你技術及方法，還要建立你正確的網頁觀念，融會貫通後你將大幅提高自學能力，降低卡關浪費時間查找的困擾！",
@@ -84,36 +95,42 @@
         {
             "title": "網頁課程推薦",
             "cards": [{
+                "id": 0,
                 "img": "https://5xruby.tw/assets/images/testimoney/avatar/victor-3ec52916.jpg",
                 "alt": "程式課程推薦 | Victor Lam | 五倍紅寶石",
                 "author": "Victor Lam",
                 "content": "Programmer 最有價值的是經驗值，「五倍紅寶石」的導師都是社群內數一數二的資深 Rubyist，由他們來帶領學員一探 Ruby 世界的神奇之處，實在是最佳選擇。",
                 "job": "連續創業家，自由工作者"
             }, {
+                "id": 1,
                 "img": "https://5xruby.tw/assets/images/testimoney/avatar/jason-e7e95cad.jpg",
                 "alt": "程式課程推薦 | Jason Hs | 五倍紅寶石",
                 "author": "Jason Hs",
                 "content": "Eddie and his team are of the most dedicated Ruby evangelists I have ever come across. With their passion and professionalism, Ruby learners will leapfrog in their progress.",
                 "job": "founder of The Big Questions & TEDxTaipei"
             }, {
+                "id": 2,
                 "img": "https://5xruby.tw/assets/images/testimoney/avatar/felix-d1d4db69.jpg",
                 "alt": "程式課程推薦 | Felix Lin | 五倍紅寶石",
                 "author": "Felix Lin",
                 "content": "還在尋找專業的 Ruby/Rails 師資嗎？別懷疑了，台灣最頂尖的 Rubyist 盡在「五倍紅寶石」！",
                 "job": "dappei.com 「搭配」網站創辦人"
             }, {
+                "id": 3,
                 "img": "https://5xruby.tw/assets/images/testimoney/avatar/hana-4ae009cb.jpg",
                 "alt": "程式課程推薦 | Hana Chang | 五倍紅寶石",
                 "author": "Hana Chang",
                 "content": "慕凡和龍哥是業界數一數二的 Ruby 大師，他們不光是底子深厚，也很懂得引導、訓練學習路上遇到挫折的 Ruby/Rails 學子。很慶幸有他們的協助讓我進入紅寶石的美妙世界。",
                 "job": "Co-Founder and CEO of BountyHunter"
             }, {
+                "id": 4,
                 "img": "https://5xruby.tw/assets/images/testimoney/avatar/johnsie-7322ca81.jpg",
                 "alt": "程式課程推薦 | John Sie | 五倍紅寶石",
                 "author": "John Sie",
                 "content": "選擇程式語言很重要，但選擇優秀的導師更重要！能跟擁有多年 Ruby/Rails 實戰經驗、活躍於社群的頂尖 Rubyist 學習，將一窺程式開發殿堂之藝術！我堅信：專業事讓專業的來，而專業的「五倍紅寶石」是寶藏，就等大家來挖掘。",
                 "job": "Accuvally Inc.共同創辦人暨營運長 "
             }, {
+                "id": 5,
                 "img": "https://5xruby.tw/assets/images/testimoney/avatar/benlin-54e253f4.jpg",
                 "alt": "程式課程推薦 | Ben Li | 五倍紅寶石",
                 "author": "Ben Li",
@@ -124,14 +141,17 @@
         {
             "title": "案例作品 Showcase",
             "cards": [{
+                "id": 0,
                 "img": "https://5xruby.tw/assets/images/showcases/space_next_door-4dfdfeb6.png",
                 "title": "SpaceNextDoor",
                 "content": "Space Next Door is inspired by the sharing economy in which we hope to encourage people to put up their unused space so that users looking for personal or business storage space have better options, closer to where they need it. We are striving to build a trusted community marketplace for you to list, discover and book the nearest and best space at affordable prices."
             }, {
+                "id": 1,
                 "img": "https://5xruby.tw/assets/images/showcases/shopmatic_go-f7b86d46.png",
                 "title": "Shopmatic Go app",
                 "content": "Shopmatic Go is an exciting online platform where you can create a unique and comprehensive online store for your business, in a matter of minutes."
             }, {
+                "id": 2,
                 "img": "https://5xruby.tw/assets/images/showcases/shopmatic-92ff9dcf.jpg",
                 "title": "跨境電子商務 Shopmatic",
                 "content": "Shopmatic manages the entire ecosystem for anyone wanting to sell online. We go the extra mile to ensure that we help you in every step of the process to grow your business online - from developing your own unique webstore, to listing you on marketplaces and social channels, to providing you insights on how to sell online."

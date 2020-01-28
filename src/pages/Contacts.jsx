@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import Content from '../components/Contacts/Content'
+import React from 'react';
+import Content from '../components/Contacts/Content.jsx';
 
-class Contacts extends Component {
-    render() {
-        return (
-            <div className="contacts">
-                <Content />
-            </div>
-        )
-    }
-}
+const Contacts = () => (
+  <div className="contacts">
+    <Content />
+  </div>
+);
 
-export default Contacts
+export default Contacts;

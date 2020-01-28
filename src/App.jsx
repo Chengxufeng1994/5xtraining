@@ -1,14 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from '../src/components/Header/Header';
-import Footer from '../src/components/Footer/Footer';
-import Home from './pages/Home.jsx'
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import Home from './pages/Home.jsx';
 import Contacts from './pages/Contacts.jsx';
 // import Carousel from './components/Carousel/Carousel'
 
 function App() {
   return (
-    <Fragment>
+    // Fragment使用shorthand syntax(速記語法), <>...</>
+    <>
       <Router>
         <Header />
         <Route path="/" exact component={Home} />
@@ -16,7 +17,8 @@ function App() {
         {/* <Carousel /> */}
         <Footer />
       </Router>
-    </Fragment>);
+    </>
+  );
 }
 
 export default App;
