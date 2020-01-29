@@ -1,10 +1,11 @@
 import React from 'react';
+import PostTtitle from '../components/posts/PostTitle';
+import PostList from '../components/posts/PostList';
 
 const Posts = () => (
-  <div className="col-12 center-block pb-3">
-    <h3 className="section-title text-center my-5 pb-4">
-      最新消息
-    </h3>
+  <div className="posts">
+    <PostTtitle />
+    <PostList />
   </div>
 );
 
