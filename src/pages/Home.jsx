@@ -1,10 +1,10 @@
 import React from 'react';
-import HomeCarousel from '../components/Content/HomeCarousel.jsx';
-import Feature from '../components/Content/Feature.jsx';
-import Recent from '../components/Content/Recent.jsx';
-import AvatarCarousel from '../components/Content/AvatarCarousel.jsx';
-import Showcases from '../components/Content/Showcases.jsx';
-import Knowaboutus from '../components/Content/Knowaboutus.jsx';
+import HomeCarousel from '../components/Content/HomeCarousel';
+import Feature from '../components/Content/Feature';
+import Recent from '../components/Content/Recent';
+import AvatarCarousel from '../components/Content/AvatarCarousel';
+import Showcases from '../components/Content/Showcases';
+import Knowaboutus from '../components/Content/Knowaboutus';
 // database
 import data from '../db/content.json';
 

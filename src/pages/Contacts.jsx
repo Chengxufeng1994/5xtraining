@@ -1,5 +1,5 @@
 import React from 'react';
-import Content from '../components/Contacts/Content.jsx';
+import Content from '../components/Contacts/Content';
 
 const Contacts = () => (
   <div className="contacts">

@@ -14,6 +14,7 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      "experimentalObjectRestSpread": true
     },
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -21,5 +22,10 @@ module.exports = {
   plugins: [
     'react',
   ],
-  rules: {}
+  rules: {
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+  }
+
 };
