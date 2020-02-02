@@ -1,14 +1,17 @@
 /* eslint-disable no-console */
 /* eslint-disable class-methods-use-this */
-import React, { Component } from "react";
-import axios from "axios";
-
+import React, { Component } from 'react';
+import PostItems from './PostItems';
+import Pagination from './Pagination';
 class PostList extends Component {
   constructor(props) {
     super(props);
     this.state = {
       posts: [],
-      errMsg: ""
+      currentPage: 1,
+      postsPerPage: 4,
+      isloading: true,
+      errMsg: ''
     };
   }
 
@@ -16,40 +19,44 @@ class PostList extends Component {
     this.getPosts();
   }
 
-  getPosts = async () => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then(response => response.json())
+  getPosts = () => {
+    this.setState({ isloading: false });
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(response => {
+        if (response.status === 200) return response.json();
+        else this.setState({ errMsg: 'Error - ' + res.status });
+      })
       .then(data => this.setState({ posts: data }))
-      .catch(error => this.setState({ errMsg: error }));
+      .catch(err => this.setState({ errMsg: err.message }));
   };
 
-  postItems() {
-    const { posts } = this.state;
-    console.log(posts);
-    return posts.map(post => {
-      return (
+  paginate = page => {
+    this.setState({ currentPage: page });
+  };
+
+  render() {
+    const { posts, currentPage, postsPerPage, isloading } = this.state;
+    const indexOfLastPage = currentPage * postsPerPage;
+    const indexOfFirstPage = indexOfLastPage - postsPerPage;
+    const currentPosts = posts.slice(indexOfFirstPage, indexOfLastPage);
+
+    return (
+      <div className="pb-3 posts-content">
         <div className="post-lists mt-5">
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div className="card w-100">
-                  <div className="card-body">
-                    <h1>{post.title}</h1>
-                    <p>{post.body}</p>
-                  </div>
-                </div>
+                <PostItems posts={currentPosts} isloading={isloading} />
+                <Pagination
+                  posts={posts}
+                  currentPage={currentPage}
+                  postsPerPage={postsPerPage}
+                  paginate={this.paginate}
+                />
               </div>
             </div>
           </div>
         </div>
-      );
-    });
-  }
-
-  render() {
-    return (
-      <div className="pb-3 posts-content">
-        {!this.state.posts.length ? <div>Loading...</div> : this.postItems()}
       </div>
     );
   }
