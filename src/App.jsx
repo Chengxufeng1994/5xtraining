@@ -19,15 +19,15 @@ function App() {
     <>
       <Router>
         <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/imcoding" exact component={Imcoding} />
-        <Route path="/astro" exact component={AstroCamp} />
-        <Route path="/talks" exact component={Talks} />
-        <Route path="/dev5xruby" exact component={Dev5ruby} />
-        <Route path="/training" exact component={Training} />
-        <Route path="/space" exact component={Space} />
-        <Route path="/posts" exact component={Posts} />
-        <Route path="/contacts" exact component={Contacts} />
+        <Route path="/5xtraining" exact component={Home} />
+        <Route path="/5xtraining/imcoding" exact component={Imcoding} />
+        <Route path="/5xtraining/astro" exact component={AstroCamp} />
+        <Route path="/5xtraining/talks" exact component={Talks} />
+        <Route path="/5xtraining/dev5xruby" exact component={Dev5ruby} />
+        <Route path="/5xtraining/training" exact component={Training} />
+        <Route path="/5xtraining/space" exact component={Space} />
+        <Route path="/5xtraining/posts" exact component={Posts} />
+        <Route path="/5xtraining/contacts" exact component={Contacts} />
         {/* <Carousel /> */}
         <Footer />
       </Router>
